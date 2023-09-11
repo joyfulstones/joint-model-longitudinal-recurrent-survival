@@ -142,14 +142,14 @@ end;
 
 if aa=1 then do;	/* likelihood for recurrent events and death */
 
-* base hazard and cumulative baseline hazard for recurrent events;
+* baseline hazard and cumulative baseline hazard for recurrent events;
 
 base_haz_r=r01 * event_r1 + r02 * event_r2 + r03 * event_r3 + r04 * event_r4 + r05 * event_r5 + 
 r06 * event_r6 + r07 * event_r7 + r08* event_r8 +r09 * event_r9 + r10 * event_r10;
 cum_base_haz_r=r01 * dur_r1 + r02 * dur_r2 + r03 * dur_r3 + r04 * dur_r4 + r05 * dur_r5 + r06 * dur_r6 + 
 r07 * dur_r7 + r08* dur_r8 +r09 * dur_r9 + r10 * dur_r10;
 
-* base hazard and cumulative baseline hazard for death events;
+* baseline hazard and cumulative baseline hazard for death events;
 
 base_haz_d=h01 * event_d1 + h02 * event_d2 + h03 * event_d3 + h04 * event_d4 + h05 * event_d5 + 
 h06 * event_d6 + h07 * event_d7 + h08* event_d8 +h09 * event_d9 + h10 * event_d10;
